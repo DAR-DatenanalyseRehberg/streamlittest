@@ -1,27 +1,5 @@
-# =============================================================
-# Taxi-Dashboard mit Streamlit  (STARTER / Geruest)
-# =============================================================
-# Baue aus deiner Capstone-Analyse ein interaktives Dashboard.
-#
-# Streamlit-Grundidee: Du schreibst normales Python. Jeder st.-Befehl
-# zeichnet ein Element auf die Web-Seite. Bei jeder Nutzer-Eingabe
-# laeuft das Skript automatisch von oben neu durch.
-#
-# Starten (im Terminal, in DIESEM Ordner):
-#   pip install streamlit          # einmalig
-#   streamlit run taxi_dashboard_starter.py
-# -> Browser oeffnet sich auf http://localhost:8501
-#    Aenderungen speichern -> im Browser auf "Rerun" klicken.
-# =============================================================
-
-
-# https://www.datacamp.com/tutorial/streamlit
-
-
-
 from pathlib import Path
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 import streamlit as st
 
@@ -125,4 +103,3 @@ import numpy as np
 import streamlit as st
 df = pd.DataFrame(    np.random.randn(500, 2) / [50, 50] + [37.76, -122.4], columns=['lat', 'lon'])
 st.map(df)
-
