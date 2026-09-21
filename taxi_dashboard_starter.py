@@ -1,6 +1,3 @@
-from pathlib import Path
-import pandas as pd
-import matplotlib.pyplot as plt
 import streamlit as st
 
 st.set_page_config(page_title="NYC Taxi Dashboard", page_icon="🚕", layout="wide")
@@ -103,3 +100,4 @@ import numpy as np
 import streamlit as st
 df = pd.DataFrame(    np.random.randn(500, 2) / [50, 50] + [37.76, -122.4], columns=['lat', 'lon'])
 st.map(df)
+
